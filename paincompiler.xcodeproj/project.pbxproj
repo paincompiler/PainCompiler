@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1F3AA03A1A0D3E4F0077EEAC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3AA0391A0D3E4F0077EEAC /* main.cpp */; };
+		1F3AA0451A0D41F70077EEAC /* scanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3AA0431A0D41F70077EEAC /* scanner.cpp */; };
+		1F3AA0481A0D42230077EEAC /* token.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3AA0461A0D42230077EEAC /* token.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		1F3AA0361A0D3E4F0077EEAC /* paincompiler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = paincompiler; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3AA0391A0D3E4F0077EEAC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1F3AA0431A0D41F70077EEAC /* scanner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scanner.cpp; sourceTree = "<group>"; };
+		1F3AA0441A0D41F70077EEAC /* scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scanner.h; sourceTree = "<group>"; };
+		1F3AA0461A0D42230077EEAC /* token.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = token.cpp; sourceTree = "<group>"; };
+		1F3AA0471A0D42230077EEAC /* token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = token.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				1F3AA0391A0D3E4F0077EEAC /* main.cpp */,
+				1F3AA0431A0D41F70077EEAC /* scanner.cpp */,
+				1F3AA0441A0D41F70077EEAC /* scanner.h */,
+				1F3AA0461A0D42230077EEAC /* token.cpp */,
+				1F3AA0471A0D42230077EEAC /* token.h */,
 			);
 			path = paincompiler;
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F3AA03A1A0D3E4F0077EEAC /* main.cpp in Sources */,
+				1F3AA0451A0D41F70077EEAC /* scanner.cpp in Sources */,
+				1F3AA0481A0D42230077EEAC /* token.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
