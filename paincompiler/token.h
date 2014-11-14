@@ -27,7 +27,9 @@ namespace paincompiler {
         
     };
     
-    
+    class TokenLocation{
+        
+    };
     
     class Token{
         
