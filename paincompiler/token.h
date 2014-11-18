@@ -21,13 +21,74 @@ namespace paincompiler {
     
     enum class TokenType{
         
-    };
-    
-    enum class TokenValue{
+        BYTE,
+        CHAR,
+        BOOLEAN,
+        INTEGER,
+        LONG,
+        FLOAT,
+        STRING,
+        OBJECT,
+        
+        IDENTIFIER,
+        KEYWORDS,
+        OPERATORS,
+        DELIMITER,
+        END_OF_FILE,
+        UNKNOWN
         
     };
     
-    class TokenLocation{
+    enum class TokenValue {
+        
+        FOR,
+        WHILE,
+        LOOP,
+        IN,
+        IF,
+        ELSE,
+        AND,
+        OR,
+        NOT,
+        
+        VAR,
+        CONST,
+        
+        LEFT_PAREN,
+        RIGHT_PAREN,
+        LEFT_SQUARE,
+        RIGHT_SQUARE,
+        PLUS,
+        MINUS,
+        MULTIPLY,
+        DIVIDE,
+        COMMA,
+        SEMICOLON,
+        COLON,
+        ASSIGN,
+        PERIOD,
+        DOUBLE_DOT,
+        UPARROW,
+        
+        LESS_OR_EQUAL,
+        LESS_THAN,
+        GREATER_OR_EQUAL,
+        GREATER_THAN,
+        EQUAL,
+        NOT_EQUAL,
+        
+    };
+    
+    class TokenLocation {
+        
+    public:
+        TokenLocation();
+        TokenLocation(const std::string& fileName, int line, int column);
+        
+    private:
+        std::string fileName_;
+        int line_;
+        int column_;
         
     };
     

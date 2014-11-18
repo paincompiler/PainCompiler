@@ -10,4 +10,7 @@
 
 namespace paincompiler {
     
+    TokenLocation::TokenLocation(const std::string& fileName, int line, int column):
+    fileName_(fileName), line_(line), column_(column) {}
+    
 }
