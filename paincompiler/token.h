@@ -93,7 +93,19 @@ namespace paincompiler {
     };
     
     class Token{
+    public:
+        Token();
+        Token(TokenType type, TokenValue value, const TokenLocation& location, std::string& stringValue, std::string stringName);
         
+        TokenType getTokenType() const;
+        TokenValue getTokenValue() const;
+        const TokenLocation& getTokenLocation() const;
+        
+        
+    private:
+        TokenType type_;
+        TokenValue value_;
+        TokenLocation location_;
     };
     
 }
